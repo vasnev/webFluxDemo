@@ -1,17 +1,28 @@
 package com.sidenis
 
-import spock.lang.Specification;
+import spock.lang.Specification
+import user.User;
 
 public class SimpleTest extends Specification {
 
-    def "an integer can be incremented"() {
-
+    def "a user can follow another user"() {
         given:
-        int i = 1;
-        when:
-        i++
-        then:
-        i == 2
+        def user = new User()
+        user.setName("Vasya")
 
+        def other = new User()
+        other.setName("Petya")
+        when:
+        user.follow(other)
+        then:
+        user.getFollowers().size() == 1
+        user.getFollowers().contains(other)
+    }
+
+    def "a new user is not following anyone"() {
+        given:
+        def user = User.builder().name("Petr").followers(new ArrayList<User>()).build();
+        expect:
+        user.getFollowers().isEmpty()
     }
 }
