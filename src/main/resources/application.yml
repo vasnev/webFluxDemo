@@ -1,0 +1,19 @@
+server:
+  port: 8080
+endpoints:
+  health:
+    sensitive: false
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
+cassandra:
+  contactpoints: 127.0.0.1
+  port: 9042
+  keyspace: userKeyspace
+  basepackages: com.fv.webfluxdemo
+# logging.level.root=debug
+logging:
+  pattern:
+    console: '%d{HH:mm:ss.SSS} [%thread] %logger.%M - %msg%n'

@@ -44,10 +44,15 @@
 		<!--<groupId>org.springframework.boot</groupId>-->
 		<!--<artifactId>spring-boot-starter-security</artifactId>-->
 		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>org.cognitor.cassandra</groupId>-->
+			<!--<artifactId>cassandra-migration</artifactId>-->
+			<!--<version>2.2.0</version>-->
+		<!--</dependency>-->
 		<dependency>
-			<groupId>org.cognitor.cassandra</groupId>
-			<artifactId>cassandra-migration</artifactId>
-			<version>2.2.0</version>
+			<groupId>org.testcontainers</groupId>
+			<artifactId>spock</artifactId>
+			<version>1.8.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>

@@ -1,5 +1,6 @@
 package com.fv.webfluxdemo.user;
 
+import org.reactivestreams.Publisher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
@@ -26,8 +27,8 @@ public class UserController {
         return userRepository.findAll();
     }
 
-//    @PutMapping
-//    private Flux<User> saveUser(@RequestBody User user) {
-//        return userRepository.save(user);
-//    }
+    @PostMapping
+    private Flux<User> saveUser(@RequestBody Publisher<User> user) {
+        return userRepository.insert(user);
+    }
 }
