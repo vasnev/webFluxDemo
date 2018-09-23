@@ -1,7 +1,5 @@
-package com.sidenis.reactiveuser.user.controller;
+package com.fv.webfluxdemo.user;
 
-import com.sidenis.reactiveuser.user.dao.UserRepository;
-import com.sidenis.reactiveuser.user.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;

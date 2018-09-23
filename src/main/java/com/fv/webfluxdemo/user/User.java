@@ -1,4 +1,4 @@
-package com.sidenis.reactiveuser.user.pojo;
+package com.fv.webfluxdemo.user;
 
 import lombok.*;
 import org.springframework.data.cassandra.core.mapping.Column;

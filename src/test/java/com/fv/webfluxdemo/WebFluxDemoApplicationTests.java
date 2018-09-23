@@ -1,4 +1,4 @@
-package com.sidenis.reactiveuser;
+package com.fv.webfluxdemo;
 
 import org.junit.Assert;
 import org.junit.Test;

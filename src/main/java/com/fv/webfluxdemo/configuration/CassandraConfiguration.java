@@ -1,4 +1,4 @@
-package com.sidenis.reactiveuser.configuration;
+package com.fv.webfluxdemo.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
